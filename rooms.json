@@ -1,0 +1,67 @@
+{
+  "room-13x19s": {
+    "host": "lzySohJrXcJqf_Z7AAAg",
+    "players": [
+      "lzySohJrXcJqf_Z7AAAg"
+    ],
+    "name": "adsadsads",
+    "game": {
+      "players": {},
+      "usedWords": {},
+      "round": 0,
+      "maxRounds": 10,
+      "started": false,
+      "currentFirstLetter": "",
+      "currentLastLetter": "",
+      "_isGameManager": true
+    },
+    "readyStates": {
+      "lzySohJrXcJqf_Z7AAAg": false
+    }
+  },
+  "room-6ke04k": {
+    "host": "YTDnd1Y-mWjMAEG2AAAd",
+    "players": [
+      "YTDnd1Y-mWjMAEG2AAAd",
+      "F5id1bfm4loJJP87AAAn"
+    ],
+    "name": "dsasdas",
+    "game": {
+      "players": {},
+      "usedWords": {},
+      "round": 0,
+      "maxRounds": 10,
+      "started": false,
+      "currentFirstLetter": "",
+      "currentLastLetter": "",
+      "_isGameManager": true
+    },
+    "readyStates": {
+      "YTDnd1Y-mWjMAEG2AAAd": true,
+      "F5id1bfm4loJJP87AAAn": true
+    }
+  },
+  "room-z2xxj1": {
+    "host": "F6k7uH_2P4bCS_a1AABj",
+    "players": [
+      "F6k7uH_2P4bCS_a1AABj"
+    ],
+    "name": "asdads",
+    "game": {
+      "players": {
+        "asdasd": 2,
+        "asdadsasd": 0
+      },
+      "usedWords": {},
+      "round": 1,
+      "maxRounds": 10,
+      "started": true,
+      "currentFirstLetter": "t",
+      "currentLastLetter": "i",
+      "_isGameManager": true
+    },
+    "readyStates": {
+      "F6k7uH_2P4bCS_a1AABj": true
+    }
+  }
+}
