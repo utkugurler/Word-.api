@@ -265,19 +265,21 @@ function getRoomState(roomId) {
 
 // Tüm odaların özetini döner
 function getAllRoomsState() {
-  return Object.entries(rooms).map(([roomId, room]) => ({
-    id: roomId,
-    name: room.name || roomId,
-    players: room.players.map((id) => ({
-      id,
-      name: io.sockets.sockets.get(id)?.data.username || id, // id göster
-      isReady: room.readyStates ? room.readyStates[id] : false
-    })),
-    maxPlayers: 2,
-    isGameStarted: false,
-    currentRound: 1,
-    totalRounds: 10
-  }));
+  return Object.entries(rooms)
+    .filter(([_, room]) => room.players && room.players.length > 0)
+    .map(([roomId, room]) => ({
+      id: roomId,
+      name: room.name || roomId,
+      players: room.players.map((id) => ({
+        id,
+        name: io.sockets.sockets.get(id)?.data.username || id, // id göster
+        isReady: room.readyStates ? room.readyStates[id] : false
+      })),
+      maxPlayers: 2,
+      isGameStarted: false,
+      currentRound: 1,
+      totalRounds: 10
+    }));
 }
 
 server.listen(PORT, () => {
