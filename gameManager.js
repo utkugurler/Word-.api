@@ -98,7 +98,7 @@ class GameManager {
   }
 
   randomLetter() {
-    const letters = 'abcdefghijklmnoprstuvwyz';
+    const letters = 'abcdefghijklmnoprstuvyz';
     return letters[Math.floor(Math.random() * letters.length)];
   }
 }

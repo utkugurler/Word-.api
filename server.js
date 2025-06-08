@@ -275,7 +275,7 @@ function getAllRoomsState() {
         name: io.sockets.sockets.get(id)?.data.username || id, // id göster
         isReady: room.readyStates ? room.readyStates[id] : false
       })),
-      maxPlayers: 2,
+      maxPlayers: 4,
       isGameStarted: false,
       currentRound: 1,
       totalRounds: 10
